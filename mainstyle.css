@@ -1,0 +1,282 @@
+body{
+    background-color: rgb(44, 44, 44);
+    color:rgb(255,255,255);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+input[type="text"]{
+    background-color: rgb(70, 70, 70);
+    color:rgb(255,255,255);
+}
+input[type="password"]{
+    background-color: rgb(70, 70, 70);
+    color:rgb(255,255,255);
+}
+textarea{
+    background-color: rgb(70, 70, 70);
+    color:rgb(255,255,255);
+}
+#website{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#header{
+    width: 100%;
+    float:left;
+    margin-bottom: 25px;
+}
+#header h1{
+    width: 100%;
+    text-align: center;
+    font-size:50;
+}
+#menu{
+    width:100%;
+    text-align: center;
+    display:flex;
+    justify-content: center;  
+    flex-wrap: wrap;  
+    gap:5px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: 18;    
+}
+.menuitem{
+    float: left;   
+    padding: 10px;    
+    background-color: rgb(53, 53, 53);
+    width: 175px;
+    height: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.menuitem:hover{
+    background-color: rgb(110, 110, 110);
+    color: rgb(53, 53, 53);
+}
+#container{
+    width:100%;
+    height:cals(100% - 50px);
+}
+#articleholder{
+    float:left;
+    width:calc(100% - 25% - 30px);
+    height:100%; 
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding:15px;
+}
+.articleitem{
+    position:relative;
+    margin:25px 25px;
+    float:left;
+    border-radius:55px;
+}
+.articleitemimage{
+    width:400px;
+    height:400px;
+    float:left;
+    border-radius:55px;
+}
+.gradient{
+    position: absolute;
+    width:400px;
+    height:400px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.99), transparent);
+    opacity: 0.9;
+    transition: 0.5s;
+    border-radius:54px;
+    cursor: pointer;
+}
+.gradient:hover{
+    opacity:1; 
+}
+.gradient:hover + h3, .gradient:hover + h3 + h5{
+    text-decoration: underline;    
+    pointer-events: none;
+}
+.articletitle{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+}
+.articledescribtion{
+    position:absolute;
+    bottom:0;
+    left:25px;
+}
+#quickarticle{    
+    position:relative;
+    float:left;
+    width:25%;
+    height:100%; 
+}
+.quickarticleitem{
+    width:calc(100% - 80px);
+    height:50px;
+    font-size:30;
+    transition:0.5s;    
+    padding:20px;
+    padding-left:40px;
+    margin:20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.quickarticleitem:hover{
+    background-color: rgb(110, 110, 110);
+    color: rgb(53, 53, 53);
+}
+#truefooter{
+    float:left;
+    width:100%;
+    height:50px;
+}
+#footer{
+    background-color: rgb(53, 53, 53);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    text-align: center;
+}
+#footer h3{
+    position: absolute;
+    top: -9px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Dla artykułów */
+#articleTitle{
+    font-size:50px;
+}
+#division{
+    position:relative;
+    width:100%;
+    height:1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgb(255, 255, 255), rgba(255, 255, 255, 0.1));
+    margin-bottom: 10px;
+}
+#contentBox{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding:20px;
+    border-radius:20px;
+}
+.content{
+    font-size: 17;
+}
+#author{
+    text-align: right;
+}
+#page{
+    display:flex;
+    font-size: 20;
+    margin:20px;
+    width:100%;
+    float:left;
+    justify-content: flex-end;
+}
+.pageNum{     
+    display:flex;
+    justify-content: center;  
+    align-items:center;
+    width:20px;
+    height:20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left:7px;
+    border-radius: 5px;
+    transition:0.5s;
+    
+}
+.pageNum:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#commentsSection{
+    position:relative;
+    float:left;
+    width:100%;
+    display:flex;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+}
+.commentSectionText{
+    font-weight:bold;
+    font-size:20;
+}
+.error{
+    color:rgb(255, 0, 0);
+    font-size:20;
+
+}
+.commentholder{
+    float:left;
+    width:calc(100% - 25% - 30px);
+    height:100%; 
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    padding:15px;
+}
+
+/* Dla gry */
+
+#gameBox{
+    width:100%;
+    height:350px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 25;
+    padding:10px;
+    border-radius: 15px;
+    display: grid;
+}
+#krupier{
+    height:107.5px;
+    display:grid;
+    justify-content: center;
+}
+.score{
+    display:grid;
+    justify-content: center;
+}
+#gracz{
+    height:107.5px;
+    display:grid;
+    justify-content: center;
+}
+#buttons{
+    display:flex;
+    justify-content: center;
+}
+.cardholder{
+    display:flex;
+    gap:10px;
+}
+.card{
+    width:70px;
+    height:100px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-size:80;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Dla rejestracji*/
+#login{
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.acc:hover{
+    text-decoration: underline;
+}
